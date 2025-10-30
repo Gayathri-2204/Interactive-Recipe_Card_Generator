@@ -25,13 +25,12 @@ An elegant and interactive web application that allows users to create, customiz
 | **HTML5** | Structure of the web pages |
 | **CSS3** | Styling and layout |
 | **Bootstrap 5** | Responsive design and components |
-| **JavaScript (optional)** | For interactivity (if added later) |
 
 ---
 
 ## 🚀 Live Demo
 
-🔗 **View Website:** [Click Here to Explore on Netlify] https://kitchen-coder.netlify.app/)
+🔗 **View Website:** [Click Here to Explore on Netlify] (https://kitchen-coder.netlify.app/)
 
 *(Replace the above link with your actual Netlify URL)*
 

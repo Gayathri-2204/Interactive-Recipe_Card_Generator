@@ -65,20 +65,10 @@ An elegant and interactive web application that allows users to create, customiz
         Simply open the index.html file in your browser.
         Or use Live Server in VS Code for a smoother experience.
 
-   ***Folder Structure***
-
-   Interactive-Recipe_Card_Generator/
-├── index.html
-├── style.css
-├── assets/
-│   ├── images/
-│   ├── icons/
-│   └── screenshots/
-└── README.md
 
 
 
-💡 Future Enhancements
+💡 **Future Enhancements**
 
 🧾 Add local storage to save recipes.
 
@@ -92,7 +82,7 @@ An elegant and interactive web application that allows users to create, customiz
 
 .
 
-👩‍💻 Developed By
+👩‍💻 **Developed By**
 
 Lakshmi Gayathri
 💼 B.Tech CSE Student | Frontend Developer | Passionate about Web Design & UI

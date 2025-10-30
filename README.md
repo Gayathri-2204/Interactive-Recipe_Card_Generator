@@ -31,7 +31,7 @@ An elegant and interactive web application that allows users to create, customiz
 
 ## 🚀 Live Demo
 
-🔗 **View Website:** [Click Here to Explore on Netlify](https://your-netlify-site.netlify.app)
+🔗 **View Website:** [Click Here to Explore on Netlify] https://kitchen-coder.netlify.app/)
 
 *(Replace the above link with your actual Netlify URL)*
 
@@ -85,9 +85,8 @@ An elegant and interactive web application that allows users to create, customiz
 
 👩‍💻 **Developed By**
 
-Lakshmi Gayathri
+***Lakshmi Gayathri***
 💼 B.Tech CSE Student | Frontend Developer | Passionate about Web Design & UI
-📧 lakshmigayathri2021@gmail.com
 
 ---
 
@@ -99,15 +98,15 @@ Lakshmi Gayathri
 
 🔹 **Step-by-Step Process**
 
-**Project Selection:**
+1]**Project Selection:**
 I chose to create an Interactive Recipe Card Generator website because it combines creativity with frontend design. It also demonstrates my skills in HTML, CSS, and Bootstrap, while maintaining simplicity and functionality.
 
 ---
-**Planning and Layout Design:**
+2]**Planning and Layout Design:**
 I started by sketching the layout of the website — including the header, recipe input area, card preview, and footer. I made sure to plan for a responsive and clean interface that works well on all screen sizes.
 
 ---
-**Development Phase:**
+3]**Development Phase:**
 
 Created the HTML structure with sections for the navigation bar, input fields, and recipe cards.
 
@@ -120,7 +119,7 @@ Designed interactive elements like “Generate Recipe Card” and “Success Mes
 Tested the layout across devices and browsers to ensure full responsiveness.
 
 ---
-**Deployment:**
+4]**Deployment:**
 
 The project was version-controlled using Git and GitHub.
 After completing the website, I deployed it on Netlify by linking the GitHub repository.

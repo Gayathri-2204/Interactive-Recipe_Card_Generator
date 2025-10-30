@@ -87,10 +87,12 @@ An elegant and interactive web application that allows users to create, customiz
 Lakshmi Gayathri
 💼 B.Tech CSE Student | Frontend Developer | Passionate about Web Design & UI
 📧 lakshmigayathri2021@gmail.com
-]
+
+---
 
 ⭐ If you like this project, don’t forget to give it a star on GitHub!
 
+---
 
 ✍️ **Project Reflection***
 
@@ -99,9 +101,11 @@ Lakshmi Gayathri
 **Project Selection:**
 I chose to create an Interactive Recipe Card Generator website because it combines creativity with frontend design. It also demonstrates my skills in HTML, CSS, and Bootstrap, while maintaining simplicity and functionality.
 
+---
 **Planning and Layout Design:**
 I started by sketching the layout of the website — including the header, recipe input area, card preview, and footer. I made sure to plan for a responsive and clean interface that works well on all screen sizes.
 
+---
 **Development Phase:**
 
 Created the HTML structure with sections for the navigation bar, input fields, and recipe cards.
@@ -114,12 +118,14 @@ Designed interactive elements like “Generate Recipe Card” and “Success Mes
 
 Tested the layout across devices and browsers to ensure full responsiveness.
 
+---
 **Deployment:**
 
 The project was version-controlled using Git and GitHub.
 After completing the website, I deployed it on Netlify by linking the GitHub repository.
 Netlify’s Continuous Deployment feature automatically updates the live site whenever I push new changes to GitHub.
 
+---
 🔹 **Use of Tools and Resources**
 
 🧠 AI Tools Used:
@@ -130,8 +136,11 @@ The code, design, and customization were implemented manually with understanding
 I referred to Bootstrap’s official documentation for class references and responsive layout implementation.
 I also reviewed a few open-source UI design examples for layout inspiration.
 
+---
 💻 **No direct code copy was done from external sources.**
 Instead, I learned from snippets and applied the concepts in my own design and structure.
+
+---
 
 🔹 **Challenges Faced & Solutions**
 Challenge	Solution
@@ -139,6 +148,8 @@ Understanding how to make the design responsive	Studied Bootstrap grid and conta
 Aligning Bootstrap modals and forms properly	Used official Bootstrap documentation and examples to fix modal positioning.
 Linking GitHub to Netlify	Learned how Continuous Deployment works — pushed code to GitHub and let Netlify rebuild automatically.
 Making the site visually appealing	Adjusted colors, shadows, and spacing for better UI using CSS fine-tuning.
+
+---
 🔹 **Learning Journey**
 
 This project helped me gain hands-on experience in frontend web development and in the process of deploying a site professionally.
@@ -154,6 +165,8 @@ Hosting and updating a live site via Netlify
 
 It was also my first time documenting a project so completely, which improved my presentation and technical writing skills.
 
+---
+
 🔹** Time Taken**
 
 🕓 Total Duration: Approximately 2 days (around 10–12 hours)
@@ -161,6 +174,8 @@ It was also my first time documenting a project so completely, which improved my
 Day 1: UI planning, HTML & CSS design
 
 Day 2: Bootstrap integration, testing, README creation, and Netlify deployment
+
+---
 
 🔹 Final Thoughts
 

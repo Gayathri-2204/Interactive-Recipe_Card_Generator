@@ -65,7 +65,7 @@ An elegant and interactive web application that allows users to create, customiz
         Simply open the index.html file in your browser.
         Or use Live Server in VS Code for a smoother experience.
 
-
+---
 
 
 💡 **Future Enhancements**
@@ -80,7 +80,8 @@ An elegant and interactive web application that allows users to create, customiz
 
 
 
-.
+---
+
 
 👩‍💻 **Developed By**
 
@@ -167,7 +168,7 @@ It was also my first time documenting a project so completely, which improved my
 
 ---
 
-🔹** Time Taken**
+🔹***Time Taken***
 
 🕓 Total Duration: Approximately 2 days (around 10–12 hours)
 
@@ -177,7 +178,7 @@ Day 2: Bootstrap integration, testing, README creation, and Netlify deployment
 
 ---
 
-🔹 Final Thoughts
+🔹 ***Final Thoughts***
 
 This project gave me a complete end-to-end development experience — from designing and coding to deployment and documentation.
 It strengthened my confidence in frontend development, version control, and self-learning using available tools responsibly.

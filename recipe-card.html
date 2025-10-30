@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Kitchen Coder | Sample Recipe Card</title>
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <!-- Bootstrap Icons CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Custom CSS for Typography and Print Styling -->
+    <style>
+        :root {
+            --kc-primary: #e76f51; /* Terracotta Red/Orange */
+            --kc-secondary: #264653; /* Dark Slate Blue */
+            --kc-light: #fef9f5;
+        }
+
+        body {
+            background-color: #f4f7f9;
+            font-family: 'Georgia', serif; 
+        }
+        
+        .navbar-custom {
+            background-color: var(--kc-secondary);
+            border-bottom: 3px solid var(--kc-primary);
+        }
+        .text-kc-primary { color: var(--kc-primary) !important; }
+
+        /* --- MAGAZINE CARD STYLING --- */
+        .recipe-card {
+            background-color: white;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            border-radius: 12px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        /* Recipe Title Style */
+        .recipe-card h1 {
+            font-family: 'Times New Roman', serif;
+            color: var(--kc-secondary);
+            font-size: 2.8rem;
+            border-bottom: 2px solid var(--kc-primary);
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+            line-height: 1.1;
+        }
+
+        /* Subheadings */
+        .recipe-card h2 {
+            font-family: 'Helvetica Neue', sans-serif;
+            font-size: 1.5rem;
+            color: var(--kc-primary);
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+
+        /* Styling the List Group for Ingredients */
+        .ingredient-list .list-group-item {
+            border: none;
+            padding: 8px 0;
+            border-bottom: 1px dashed #eee; /* Dotted line separator */
+            font-size: 1.1rem;
+            color: #333;
+        }
+        .ingredient-list .list-group-item:last-child {
+            border-bottom: none;
+        }
+
+        /* Styling the Ordered List for Instructions */
+        .instruction-list ol {
+            padding-left: 0;
+            list-style-type: none; /* Hide default numbers */
+            counter-reset: step-counter; /* Initialize counter */
+        }
+        .instruction-list li {
+            counter-increment: step-counter; /* Increment counter */
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+            color: #444;
+            position: relative;
+            padding-left: 40px; /* Space for the custom number */
+        }
+        /* Custom number styling */
+        .instruction-list li::before {
+            content: counter(step-counter);
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-family: 'Helvetica Neue', sans-serif;
+            font-weight: bold;
+            font-size: 1.2rem;
+            color: var(--kc-primary);
+            border-right: 2px solid var(--kc-primary);
+            padding-right: 10px;
+        }
+
+        /* Print Media Query: Hides navigation elements for clean printing */
+        @media print {
+            .navbar, footer, .print-actions, .container-fluid {
+                display: none !important;
+            }
+            .recipe-card {
+                box-shadow: none !important;
+                border: none !important;
+                padding: 0;
+                margin: 0;
+                max-width: 100%;
+            }
+            body {
+                background-color: white !important;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="bi bi-chef-hat me-2 text-warning"></i> The Kitchen Coder
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Generator</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="recipe-card.html">Sample Card</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Tips & Guides</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MAIN CONTENT - RECIPE CARD -->
+    <main class="container py-5">
+        
+        <!-- Print Actions -->
+        <div class="text-center mb-4 print-actions">
+            <button class="btn btn-lg btn-secondary rounded-pill shadow-sm" onclick="window.print()">
+                <i class="bi bi-printer-fill me-2"></i> Print This Recipe
+            </button>
+            <a href="index.html" class="btn btn-lg btn-outline-secondary rounded-pill shadow-sm ms-3">
+                <i class="bi bi-arrow-left me-2"></i> Go Back to Generator
+            </a>
+        </div>
+
+        <!-- The Recipe Card Container -->
+        <div class="recipe-card shadow-lg">
+
+            <!-- Recipe Header -->
+            <header class="text-center mb-4">
+                <p class="text-kc-primary lead mb-0">The Kitchen Coder Presents:</p>
+                <h1>World's Best Chocolate Chip Cookies</h1>
+                <p class="text-muted small mb-0">Recipe by: Jane Doe | Prep: 15 mins | Cook: 10 mins | Yield: 18 Cookies</p>
+            </header>
+
+            <!-- Introductory Image Placeholder (use a gradient/color instead of a real image URL) -->
+            <div class="mb-4 rounded-3 overflow-hidden shadow-sm" style="height: 300px; background: linear-gradient(135deg, #e76f51, #f4a261); display: flex; align-items: center; justify-content: center;">
+                <h3 class="text-white fw-bold display-6">Picture of Deliciousness</h3>
+            </div>
+            
+            <p class="lead text-center text-secondary fst-italic mb-5">
+                "The perfect cookie starts with browned butter and a mix of sugars. This recipe delivers chewy edges, soft centers, and incredible depth of flavor."
+            </p>
+
+            <div class="row g-5">
+                
+                <!-- Ingredients Column -->
+                <div class="col-lg-5">
+                    <h2 class="border-bottom pb-2">Ingredients</h2>
+                    
+                    <ul class="list-group list-group-flush ingredient-list">
+                        <li class="list-group-item"><i class="bi bi-check-circle-fill me-3 text-kc-primary"></i> 1 cup (2 sticks) unsalted butter, browned</li>
+                        <li class="list-group-item"><i class="bi bi-check-circle-fill me-3 text-kc-primary"></i> 1/2 cup granulated sugar</li>
+                        <li class="list-group-item"><i class="bi bi-check-circle-fill me-3 text-kc-primary"></i> 1 1/2 cups packed light brown sugar</li>
+                        <li class="list-group-item"><i class="bi bi-check-circle-fill me-3 text-kc-primary"></i> 2 large eggs, room temperature</li>
+                        <li class="list-group-item"><i class="bi bi-check-circle-fill me-3 text-kc-primary"></i> 1 tbsp vanilla extract</li>
+                        <li class="list-group-item"><i class="bi bi-check-circle-fill me-3 text-kc-primary"></i> 2 1/4 cups all-purpose flour</li>
+                        <li class="list-group-item"><i class="bi bi-check-circle-fill me-3 text-kc-primary"></i> 1 tsp baking soda</li>
+                        <li class="list-group-item"><i class="bi bi-check-circle-fill me-3 text-kc-primary"></i> 1/2 tsp salt</li>
+                        <li class="list-group-item"><i class="bi bi-check-circle-fill me-3 text-kc-primary"></i> 2 cups chocolate chips (or chunks)</li>
+                    </ul>
+                </div>
+
+                <!-- Instructions Column -->
+                <div class="col-lg-7">
+                    <h2 class="border-bottom pb-2">Instructions</h2>
+                    
+                    <div class="instruction-list">
+                        <ol>
+                            <li>**Brown the Butter:** In a small saucepan, melt the butter over medium heat. Continue stirring until the butter foams, the milk solids turn golden brown, and it smells nutty. Remove from heat and let cool for 10 minutes.</li>
+                            <li>**Mix Wet Ingredients:** In a large bowl, whisk the cooled brown butter, granulated sugar, and brown sugar until thoroughly combined. Beat in the eggs one at a time, followed by the vanilla extract.</li>
+                            <li>**Combine Dry Ingredients:** In a separate medium bowl, whisk together the flour, baking soda, and salt. Gradually add the dry mixture to the wet mixture, mixing until just combined. Do not overmix!</li>
+                            <li>**Add Chocolate:** Fold in the chocolate chips. Chill the dough for at least 30 minutes (or up to 72 hours for best flavor).</li>
+                            <li>**Bake:** Preheat oven to 375°F (190°C). Scoop 3-tablespoon sized balls onto a lined baking sheet. Bake for 10-12 minutes, or until the edges are golden brown and the centers are still slightly soft.</li>
+                            <li>**Cool:** Let the cookies cool on the baking sheet for 5 minutes before transferring them to a wire rack to finish cooling. Enjoy warm!</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Notes Section -->
+            <div class="mt-5 p-4 bg-light rounded-3 border">
+                <h3 class="h5 fw-bold text-kc-secondary mb-3"><i class="bi bi-journal-text me-2"></i> Chef's Notes</h3>
+                <p class="small text-muted mb-0">For an extra rich flavor, substitute 1/2 cup of the all-purpose flour with whole wheat flour. Always use a high-quality chocolate, as it makes a noticeable difference in the final cookie texture and taste.</p>
+            </div>
+            
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-white border-top mt-5 py-4">
+        <div class="container text-center text-muted small">
+            &copy; 2024 The Kitchen Coder. Built with Bootstrap 5.
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS CDN (Needed for Navbar Toggler) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+</body>
+</html>
